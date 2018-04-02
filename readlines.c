@@ -12,6 +12,11 @@
 
 #define BUFLEN 4096		/* read buffer length */
 
+void errorPrint(char *msg) 
+{
+  printf("Error: %s\n", msg);
+}
+
 // Count the number of lines in open file fd.
 // Also computes maximum line length
 int countLines(int fd, int *pMaxLineLen)
