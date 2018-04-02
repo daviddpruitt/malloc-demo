@@ -1,4 +1,4 @@
-
+B
 #include <sys/types.h>		/* for lseek, read */
 #include <sys/stat.h>		/* for read */
 #include <fcntl.h>		/* for read */
@@ -94,3 +94,8 @@ char **readLines(int fd)
   return lines;
 }
 
+int printMessage(char *message)
+{
+  printf("Warning message %s\n", message);
+  return 0;
+}
